@@ -6,6 +6,11 @@ hiveInUse	=	true;
 initialized = false;
 dayz_previousID = 0;
 
+dzn_ns_bloodsucker = true;		// Make this falso for disabling bloodsucker spawn
+ns_blowout = true;			// Make this false for disabling random EVR discharges (blowout module)
+ns_blowout_dayz = true;		// Leave this always true or it will create a very huuuge mess
+dayzNam_buildingLoot = "CfgBuildingLootNamalsk";	// can be CfgBuildingLootNamalskNOER7 (function of this pretty obvious), CfgBuildingLootNamalskNOSniper (CfgBuildingLootNamalskNOER7 + no sniper rifles), default is CfgBuildingLootNamalsk
+
 call compile preprocessFileLineNumbers "\nst\ns_dayz\code\init\variables.sqf"; //Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.1;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\publicEH.sqf";	//Initilize the publicVariable event handlers

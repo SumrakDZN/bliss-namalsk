@@ -64,7 +64,7 @@ _survival  = _primary select 6;
 _model     = _primary select 7;
 _hiveVer   = _primary select 8;
 	
-if (!(_model in ["SurvivorW2_DZ","Survivor2_DZ","Survivor3_DZ","Sniper1_DZ","Soldier1_DZ","Camo1_DZ","Bandit1_DZ","Rocket_DZ","CamoWinter_DZN"])) then {
+if (!(_model in ["SurvivorW2_DZ","Survivor2_DZ","Survivor3_DZ","Sniper1_DZ","Soldier1_DZ","Camo1_DZ","Bandit1_DZ","Rocket_DZ","CamoWinter_DZN","CamoWinterW_DZN","Sniper1W_DZN"])) then {
 	_model = "Survivor2_DZ";
 };
 
@@ -76,7 +76,7 @@ if (_hiveVer >= dayz_hiveVersionNo) then {
 };
 
 _clientID = owner _playerObj;
-dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,dayzNam_versionNo,_model,_isHiveOk,_newPlayer];
+dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer];
 _clientID publicVariableClient "dayzPlayerLogin";
 
 //_playerObj enableSimulation false;
