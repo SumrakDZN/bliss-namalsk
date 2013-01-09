@@ -192,10 +192,9 @@ if (isDedicated) then {
 
 allowConnection = true;
 
-//Spawn crashed helos - disabled in DayZ: Namalsk
-/*for "_x" from 1 to 5 do {
-	_id = [] spawn spawn_heliCrash;
-};*/ //Spawn heli crash
+for "_x" from 1 to 5 do {
+	//do nothing - just to be compatible to bliss packages
+}; //Spawn heli crash
 
 //Spawn static helicrash loot - DayZ: Namalsk
 for "_x" from 1 to 9 do {

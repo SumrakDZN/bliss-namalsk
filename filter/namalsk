@@ -1,5 +1,11 @@
 {
  "createVehicle": "!\\\"_light = \\\"#LightPoint\\\" createVehicleLocal [4978.8086,6630.834,0];\\\"",
  "createVehicleLocal": "!\\\"_light = \\\"#LightPoint\\\" createVehicleLocal [4978.8086,6630.834,0];\\\"",
- "\\\"box\\\"": "!\\\"z_ru_soldier_light\\\" !\\\"z_us_soldier\\\" !\\\"z_us_soldier_light\\\" !\\\"z_ru_soldier\\\" !\\\"CamoWinter_DZN\\\""
+ "\\\"box\\\"": "!\\\"z_ru_soldier_light\\\" !\\\"z_us_soldier\\\" !\\\"z_us_soldier_light\\\" !\\\"z_ru_soldier\\\" !\\\"CamoWinter_DZN\\\"",
+ 
+ "skipTime": "!\\\"daytime \\x3e= 17\\\"",
+ "allowDamage": "!\\\"me = name player;\\\\n_model call player_switchModel;\\\\n\\\\nplayer allowDamage false;\\\\n_lastAte = _survival select 1;\\\\n_lastDrank = _surviv\\\" !\\\"this allowDamage false;\\\"",
+ "setDamage": "!\\\"\\\\\\\\\\\"\\\\nst\\\\ns_modules\\\\mutants\\\\scripts\\\\mut_att.sqf\\\\\\\\\\\"; \\\\n};\\\\n_target setDamage (damage _target + 0.15); \\\\n};\\\\n} else {\\\\nif (!isMultiplayer) t\\\" !\\\" CLIENT] :: [S] and is not in a building, sorry.\\\\\\\\\\\"];\\\\nplayer setDamage ((damage player) + 0.15);\\\\ndiag_log format[\\\\\\\\\\\"[NAC BLOWOUT CLI\\\" !\\\"_target setDamage ((damage _target) + 0.15); \\\\n\\\" !\\\" (_mut_target isKindOf \\\\\\\\\\\"zZombie_Base\\\\\\\\\\\") then {\\\\n\\\\n_mut_target setDamage ((damage _mut_target) + 0.15);\\\\n} else {\\\\n\\\\n_r_player_blood = \\\"",
+ "setOvercast": "!\\\"35 setOvercast 1;\\\"",
+ "\\\"rspawn\\\"": "!\\\"hMove,\\\\\\\\\\\"amovpknlmstpsraswrfldnon\\\\\\\\\\\"] call RE;\\\\n[objNull, player, rSPAWN, [], dzn_fnc_breathfog] call RE;\\\\n\\\\nplayer disableConversation\\\""
 }
